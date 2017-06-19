@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+  {% for n in range(10) %}
+    {% for item in items %}
+      <h1>{{ item[n] }} </h1>
+    {% endfor %}
+  {% endfor %}
+{% endblock %}
