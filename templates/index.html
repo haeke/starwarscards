@@ -1,8 +1,20 @@
 {% extends "layout.html" %}
 {% block content %}
-  {% for n in range(10) %}
-    {% for item in items %}
-      <h1>{{ item[n] }} </h1>
-    {% endfor %}
-  {% endfor %}
+<link href="https://fonts.googleapis.com/css?family=Poller+One" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <div class="siema">
+    <div class="col-md-4 col-md-offset-4">
+      <h1>{{names[0]}}</h1>
+      <img src="/static/img/mountain.PNG" />
+    </div>
+    <div class="col-md-4 col-md-offset-4">
+      <h1>{{names[1]}}</h1>
+      <img class="img-responsive" src="/static/img/mountain.PNG" />
+    </div>
+    <div class="col-md-4 col-md-offset-4">
+      <h1>{{names[2]}}</h1>
+      <img src="/static/img/mountain.PNG" />
+    </div>
+  </div>
 {% endblock %}

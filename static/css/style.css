@@ -1,0 +1,22 @@
+
+/* Optional: Makes the sample page fill the window. */
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+h1 {
+  font-family: 'Poller One', cursive;
+}
+.container {
+  background-color: #118C4E;
+}
+
+/*Adjust the size of the map when the screen is smaller*/
+@media screen and (max-width: 450px) {
+  #map {
+    height: 100px;
+    width: 100%;
+  }
+}

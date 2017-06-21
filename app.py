@@ -14,7 +14,7 @@ height = []
 mass = []
 eyecolor = []
 birthyear = []
-while( count < len(infom['results'])):
+while( count < len(infom)):
     names.append(infom['results'][count]['name'])
     height.append(infom['results'][count]['height'])
     mass.append(infom['results'][count]['mass'])
@@ -26,15 +26,9 @@ while( count < len(infom['results'])):
 
 @app.route('/')
 def index():
-    items =[]
-    items.append(names)
-    items.append(height)
-    items.append(mass)
-    items.append(eyecolor)
-    items.append(birthyear)
-    print items
-    #return render_template('index.html', infom = infom)
-    return render_template('index.html', items = items)
+
+    return render_template('index.html', names=names, height=height, mass=mass, eyecolor=eyecolor, birthyear=birthyear)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
