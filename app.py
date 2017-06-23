@@ -3,7 +3,7 @@ from swapidata import Swapidata
 
 app = Flask(__name__)
 
-data = Swapidata('test')
+data = Swapidata('starwars')
 
 #store all the information that I want to query
 infom =  data.get_data()
@@ -31,4 +31,4 @@ def index():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
