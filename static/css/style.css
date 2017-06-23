@@ -1,22 +1,28 @@
 
 /* Optional: Makes the sample page fill the window. */
+
+h1 {
+  font-size: 100px;
+}
+
 body {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+.siema {
 
 }
-h1 {
-  font-family: 'Poller One', cursive;
-}
+
 .container {
   background-color: #118C4E;
+  font-family: 'Poller One';
 }
 
 /*Adjust the size of the map when the screen is smaller*/
 @media screen and (max-width: 450px) {
-  #map {
-    height: 100px;
-    width: 100%;
+  .siema {
+
   }
 }
