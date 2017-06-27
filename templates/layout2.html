@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/semantic.min.css') }}" >
+<link href="https://fonts.googleapis.com/css?family=Poller+One" rel="stylesheet">
+<div class="siema">
+  <div class="ui three stackable cards">
+    <div class="ui card">
+        <div class="image">
+            <img src="/static/img/LukeSkywalker.png">
+        </div>
+        <div class="content">
+            <div class="header">
+                Name: {{names[0]}}
+            </div>
+            <div class="header">
+                Height: {{height[0]}}
+            </div>
+            <div class="header">
+                Mass: {{mass[0]}}
+            </div>
+            <div class="header">
+                Eye Color: {{eyecolor[0]}}
+            </div>
+            <div class="header">
+                Birth Year: {{birthyear[0]}}
+            </div>
+        </div>
+    </div>
+    <div class="ui card">
+        <div class="image">
+            <img src="/static/img/C-3P0.png">
+        </div>
+        <div class="content">
+            <div class="header">
+                Name: {{names[1]}}
+            </div>
+            <div class="header">
+                Height: {{height[1]}}
+            </div>
+            <div class="header">
+                Mass: {{mass[1]}}
+            </div>
+            <div class="header">
+                Eye Color: {{eyecolor[1]}}
+            </div>
+            <div class="header">
+                Birth Year: {{birthyear[1]}}
+            </div>
+        </div>
+    </div>
+    <div class="ui card">
+        <div class="image">
+            <img src="/static/img/R2-D2.png">
+        </div>
+        <div class="content">
+            <div class="header">
+                Name: {{names[2]}}
+            </div>
+            <div class="header">
+                Height: {{height[2]}}
+            </div>
+            <div class="header">
+                Mass: {{mass[2]}}
+            </div>
+            <div class="header">
+                Eye Color: {{eyecolor[2]}}
+            </div>
+            <div class="header">
+                Birth Year: {{birthyear[2]}}
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
