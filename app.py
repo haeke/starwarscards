@@ -29,6 +29,10 @@ def index():
 
     return render_template('index.html', names=names, height=height, mass=mass, eyecolor=eyecolor, birthyear=birthyear)
 
+@app.route('/index2')
+def index_2():
+    return render_template('index_2.html', names=names, height=height, mass=mass, eyecolor=eyecolor, birthyear=birthyear)
+
 
 if __name__ == "__main__":
     app.run()
